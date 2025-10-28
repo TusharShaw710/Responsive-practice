@@ -23,6 +23,20 @@ html,body{
     gap: $gap;
 }
 
+@mixin image-card($image){
+    background-image: url($image);
+    border-radius: 0.8rem;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    zoom: 0.5;
+    @include flex-column(0 rem);
+    justify-content: space-between;
+    aspect-ratio: 1/1;
+
+}
+
 section{
     max-width: 2000px;
 }
@@ -37,7 +51,6 @@ main{
         width: 100%;
         padding: 1rem;
         @include flex-column(0.5rem);
-        padding: 1rem;
        
         #top{
             width: 100%;
@@ -201,6 +214,43 @@ main{
         }
 
     }
+
+    section.view5{
+        width: 100%;
+        padding: 1rem;
+        @include flex-column(0.5rem);
+
+        #image1{
+            @include image-card("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03-p-800.webp");
+        }
+        #image2{
+            @include image-card("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02-p-800.webp");
+
+        }
+        #image3{
+            @include image-card("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01-p-1080.webp")
+        }
+        .top{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-right: 2rem;
+            i{
+                margin-top: 2rem;
+                margin-right: 1rem;
+                font-size: 2rem;
+            }
+        }
+        .bottom{
+            margin: 1rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+            background-color: #908c8c42;
+            backdrop-filter: blur(5px);
+            border-radius: 0.8rem;
+            font-size: clamp(0.8rem,10vw,1.5rem);
+        }
+    }
 }
 
 @media (min-width:900px){
@@ -273,6 +323,15 @@ main{
                     gap: 0.5rem;
                 }
            }
+        }
+
+        section.view5{
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .card{
+                width: 33%;
+            }
         }
     }
 }

@@ -33,7 +33,6 @@ main section.view1 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1rem;
 }
 main section.view1 #top {
   width: 100%;
@@ -184,6 +183,76 @@ main section.view4 .bottom .text p {
   line-height: 1.4rem;
   opacity: 0.5;
 }
+main section.view5 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main section.view5 #image1 {
+  background-image: url("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03-p-800.webp");
+  border-radius: 0.8rem;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  zoom: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 0 rem;
+  justify-content: space-between;
+  aspect-ratio: 1/1;
+}
+main section.view5 #image2 {
+  background-image: url("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02-p-800.webp");
+  border-radius: 0.8rem;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  zoom: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 0 rem;
+  justify-content: space-between;
+  aspect-ratio: 1/1;
+}
+main section.view5 #image3 {
+  background-image: url("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01-p-1080.webp");
+  border-radius: 0.8rem;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  zoom: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 0 rem;
+  justify-content: space-between;
+  aspect-ratio: 1/1;
+}
+main section.view5 .top {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 2rem;
+}
+main section.view5 .top i {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+main section.view5 .bottom {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: rgba(144, 140, 140, 0.2588235294);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 0.8rem;
+  font-size: clamp(0.8rem, 10vw, 1.5rem);
+}
 
 @media (min-width: 900px) {
   main section.view1 {
@@ -240,5 +309,12 @@ main section.view4 .bottom .text p {
   main section.view4 .text .paragraph {
     display: flex;
     gap: 0.5rem;
+  }
+  main section.view5 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main section.view5 .card {
+    width: 33%;
   }
 }/*# sourceMappingURL=style.css.map */
