@@ -253,6 +253,90 @@ main section.view5 .bottom {
   border-radius: 0.8rem;
   font-size: clamp(0.8rem, 10vw, 1.5rem);
 }
+main section.view6 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main section.view6 .top {
+  width: 100%;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+main section.view6 .top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.view6 .bottom {
+  background-color: #1E1E1E;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+main section.view6 .bottom #text {
+  height: 35vh;
+}
+main section.view6 .bottom #text h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  opacity: 0.8;
+}
+main section.view6 .bottom h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 2rem;
+  opacity: 0.9;
+}
+main section.view6 .bottom button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  background-color: #1E1E1E;
+  color: white;
+}
+main section.view7 {
+  width: 100%;
+  padding: 1rem;
+}
+main section.view7 .card {
+  background-color: #CEBD63;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-radius: 0.8rem;
+  color: black;
+  padding: 6vw;
+}
+main section.view7 .card .top h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+main section.view7 .card .top h1 {
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  font-size: 2rem;
+}
+main section.view7 .card .bottom, main section.view7 .card button {
+  text-decoration: none;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 0.5rem;
+}
 
 @media (min-width: 900px) {
   main section.view1 {
@@ -316,5 +400,33 @@ main section.view5 .bottom {
   }
   main section.view5 .card {
     width: 33%;
+  }
+  main section.view6 {
+    flex-direction: row;
+    padding: 1rem;
+  }
+  main section.view6 .top, main section.view6 .bottom {
+    width: 50%;
+  }
+  main section.view6 .bottom #text {
+    height: 50vh;
+  }
+  main section.view7 .card {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main section.view7 .card .top {
+    width: 80%;
+  }
+  main section.view7 .card .top h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+  main section.view7 .card .bottom {
+    width: 15%;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #CEBD63;
   }
 }/*# sourceMappingURL=style.css.map */
